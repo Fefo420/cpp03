@@ -6,7 +6,7 @@
 /*   By: fefo <fefo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 22:17:10 by fefo              #+#    #+#             */
-/*   Updated: 2025/08/12 00:28:12 by fefo             ###   ########.fr       */
+/*   Updated: 2025/08/12 00:39:33 by fefo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ class ClapTrap
         unsigned int getHitPoints() const { return hitPoints; }
         unsigned int getEnergyPoints() const { return energyPoints; }
         unsigned int getAttackDamage() const { return attackDamage; }
+        unsigned int setEnergyPoints();
         
 };
 
