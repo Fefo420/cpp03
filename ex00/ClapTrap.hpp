@@ -6,7 +6,7 @@
 /*   By: fefo <fefo@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 22:17:10 by fefo              #+#    #+#             */
-/*   Updated: 2025/08/12 00:39:33 by fefo             ###   ########.fr       */
+/*   Updated: 2025/08/12 22:06:57 by fefo             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ class ClapTrap
         unsigned int attackDamage;  
     public:
         ClapTrap(std::string name);
+        ClapTrap();
         ~ClapTrap();
         void attack(const std::string& target);
         void takeDamage(unsigned int amount);
         void beRepaired(unsigned int amount);
-        // Getters for testing purposes
         std::string getName() const { return name; }
         unsigned int getHitPoints() const { return hitPoints; }
         unsigned int getEnergyPoints() const { return energyPoints; }
