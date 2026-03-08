@@ -15,7 +15,7 @@
 void fight_after_death(ClapTrap *fighter1, ClapTrap *fighter2)
 {
         std::cout << std::endl << fighter1->getName() << 
-                " try to attack after his death" << std:: endl;
+                " try to attack" << std:: endl;
         fighter1->attack(fighter2->getName());
         fighter2->takeDamage(fighter1->getAttackDamage());
 }
