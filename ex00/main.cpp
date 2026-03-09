@@ -42,6 +42,7 @@ int main()
         }
         else
         {
+            std::cout << "-------------FIGHT AFTER NO ENERGY OR NO LIFE-------------" << std::endl;
             if (claptrap1.getHitPoints() == 0 && claptrap1.getEnergyPoints() == 0)
                 fight_after_death(&claptrap1, &claptrap2);
             else

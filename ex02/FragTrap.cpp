@@ -18,7 +18,6 @@ FragTrap::FragTrap(std::string name) : ClapTrap(name)
     energyPoints = 100;
     attackDamage = 30;
     std::cout << "FragTrap " << this->name << " is between us!" << std::endl;
-    std::cout << "hitpoints = " << this->hitPoints << std::endl;
 }
 
 FragTrap::FragTrap() : ClapTrap("Default FragTrap")

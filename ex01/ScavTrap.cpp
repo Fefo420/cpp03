@@ -17,8 +17,7 @@ ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
     this->hitPoints = 100;
     this->energyPoints = 50;
     this->attackDamage = 20;
-    std::cout << "ScavTrap " << this->name << " was created" << std::endl;
-    std::cout << "hitpoints = " << this->hitPoints << std::endl;
+    std::cout << "ScavTrap " << this->name << " just Spawned..." << std::endl;
 }
 
 ScavTrap::ScavTrap() : ClapTrap()
@@ -26,7 +25,7 @@ ScavTrap::ScavTrap() : ClapTrap()
     this->hitPoints = 100;
     this->energyPoints = 50;
     this->attackDamage = 20;
-    std::cout << "Default ScavTrap created." << std::endl;
+    std::cout << "Default ScavTrap spawned...." << std::endl;
 }
 
 ScavTrap::~ScavTrap()
@@ -49,7 +48,7 @@ void ScavTrap::attack(const std::string& target)
         else
         {
             std::cout << this->name << " attacks " << target << ", causing "
-                    << attackDamage << " points of damage!" << std::endl;
+                    << attackDamage << " points of damage. That gotta hurt!!!" << std::endl;
             this->energyPoints -= 1;
             std::cout << "energy points left: " << this->energyPoints << std::endl;
         }

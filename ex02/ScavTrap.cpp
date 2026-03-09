@@ -18,7 +18,6 @@ ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
     this->energyPoints = 50;
     this->attackDamage = 20;
     std::cout << "ScavTrap " << this->name << " was created" << std::endl;
-    std::cout << "hitpoints = " << this->hitPoints << std::endl;
 }
 
 ScavTrap::ScavTrap() : ClapTrap()

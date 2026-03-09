@@ -34,6 +34,8 @@ int main()
     std::cout << std::endl << "-----------FIGHT!-----------" << std::endl;
     ScavTrap1.guardGate();
     
+    ScavTrap1.beRepaired(20);
+    ScavTrap2.beRepaired(20);
     while (1)
     {
         if (ScavTrap1.getHitPoints() > 0 && ScavTrap1.getEnergyPoints() > 0)

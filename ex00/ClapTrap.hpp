@@ -35,7 +35,6 @@ class ClapTrap
         unsigned int getEnergyPoints() const { return energyPoints; }
         unsigned int getAttackDamage() const { return attackDamage; }
         unsigned int setEnergyPoints();
-        
 };
 
 #endif

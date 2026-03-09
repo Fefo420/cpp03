@@ -17,10 +17,10 @@
 void fight_and_hi5_after_death(FragTrap *fighter1, FragTrap *fighter2)
 {
         std::cout << std::endl << fighter1->getName() << 
-                " try to ATTACK after his death" << std:: endl;
+                " try to ATTACK after his death or after no energy" << std:: endl;
         fighter1->attack(fighter2->getName());
         std::cout << std::endl << fighter1->getName() 
-        << " try to High Five after his death" << std::endl;
+        << " try to High Five after his death or after no energy" << std::endl;
         fighter1->highFivesGuys();
 
 }
@@ -30,8 +30,12 @@ int main()
 
     FragTrap FragTrap1("Lello");
     FragTrap FragTrap2("Jolon");
+    ScavTrap ScavTrap1("Tio");
     
     std::cout << std::endl << "-----------FIGHT!-----------" << std::endl;
+    ScavTrap1.attack(FragTrap1.getName());
+    ScavTrap1.beRepaired(10);
+    FragTrap1.attack(ScavTrap1.getName());
     while (1)
     {
         if (FragTrap1.getHitPoints() > 0 && FragTrap1.getEnergyPoints() > 0)
